@@ -17,17 +17,13 @@ int x = xa, y = xb;
 
 int count = 0;
 while (count < 10000)
-
 {
     int point = new Random().Next(0, 3);
     if (point == 0)
     {
 
-        x=(x+y)/2;
-        y=(x+y)/2;
-
-       // x = (x + xa) / 2;
-       // y = (y + ya) / 2;
+        x = (x + xa) / 2;
+        y = (y + ya) / 2;
     }
     if (point == 1)
     {
@@ -39,8 +35,7 @@ while (count < 10000)
         x = (x + xc) / 2;
         y = (y + yc) / 2;
     }
-}
-
 Console.SetCursorPosition(x, y);
 Console.WriteLine("+");
 count++;
+}
