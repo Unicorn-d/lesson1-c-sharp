@@ -21,7 +21,6 @@ while (count < 10000)
     int point = new Random().Next(0, 3);
     if (point == 0)
     {
-
         x = (x + xa) / 2;
         y = (y + ya) / 2;
     }
@@ -35,7 +34,7 @@ while (count < 10000)
         x = (x + xc) / 2;
         y = (y + yc) / 2;
     }
-Console.SetCursorPosition(x, y);
-Console.WriteLine("+");
-count++;
+    Console.SetCursorPosition(x, y);
+    Console.WriteLine("+");
+    count++;
 }
